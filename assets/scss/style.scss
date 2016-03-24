@@ -1,0 +1,98 @@
+/*
+ Standard AngularJS project Jelle Overbeek
+*/
+
+@import "reset";
+@import "library/colors";
+@import "library/fonts";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+p {
+
+}
+
+a {
+	&:hover {
+
+	}
+	&:focus, &:active {
+
+	}
+}
+
+label {
+
+}
+
+input {
+
+	&[type="text"], &[type="password"], &[type="number"], &[type="email"], &[type="url"] {
+
+	}
+
+	&[type="checkbox"] {
+
+	}
+
+	&[type="radio"] {
+
+	}
+}
+
+input[type="submit"], .btn, button {
+
+	&:hover {
+
+	}
+
+	&:focus, &:active {
+
+	}
+}
+
+select {
+
+	option {
+
+	}
+}
+
+ul {
+
+	li {
+
+	}
+}
+
+@import "imports";
