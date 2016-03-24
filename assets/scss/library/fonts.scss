@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'CircularBook';
+	src:	
+		url('../fonts/circular/lineto-circular-book.eot') format('eot'),
+		url('../fonts/circular/lineto-circular-book.woff') format('woff'),
+		url('../fonts/circular/lineto-circular-book.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CircularMedium';
+	src:
+		url('../fonts/circular/lineto-circular-medium.eot') format('eot'),
+		url('../fonts/circular/lineto-circular-medium.woff') format('woff'),
+		url('../fonts/circular/lineto-circular-medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CircularBold';
+	src:
+		url('../fonts/circular/lineto-circular-bold.eot') format('eot'),
+		url('../fonts/circular/lineto-circular-bold.woff') format('woff'),
+		url('../fonts/circular/lineto-circular-bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'CircularBlack';
+	src:
+		url('../fonts/circular/lineto-circular-black.eot') format('eot'),
+		url('../fonts/circular/lineto-circular-black.woff') format('woff'),
+		url('../fonts/circular/lineto-circular-black.ttf') format('truetype');
+}
+
+$circularBook: 'CircularBook', Arial, sans-serif;
+$circularMedium: 'CircularMedium', Arial, sans-serif;
+$circularBold: 'CircularBold', Arial, sans-serif;
+$circularBlack: 'CircularBlack', Arial, sans-serif;
