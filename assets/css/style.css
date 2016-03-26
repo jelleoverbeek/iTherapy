@@ -779,6 +779,8 @@ a {
 
 hr {
   border-color: #d0d3dc; }
+  hr.dark-purple {
+    border-color: #3a1fff; }
   hr.blank {
     border-color: transparent; }
 
@@ -954,6 +956,37 @@ select {
     outline: 0; }
   select option {
     font-family: "CircularBook", Arial, sans-serif; }
+
+ul.appointments li {
+  display: block;
+  margin-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #5a43ff; }
+  ul.appointments li .date {
+    background-color: #fff;
+    width: 44px;
+    height: 44px;
+    padding-top: 7px;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: "CircularBold", Arial, sans-serif;
+    text-align: center; }
+    ul.appointments li .date .day {
+      font-size: 18px;
+      color: #6752FF; }
+    ul.appointments li .date .month {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: #9485ff; }
+  ul.appointments li .description {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: top;
+    width: 195px;
+    line-height: 18px; }
+  ul.appointments li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0; }
 
 h1 {
   font-family: "CircularBold", Arial, sans-serif;

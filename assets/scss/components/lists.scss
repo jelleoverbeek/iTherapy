@@ -5,6 +5,51 @@ ul {
 	}
 }
 
+ul.appointments {
+
+	li {
+		display: block;
+		margin-top: 15px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid darken($purple, 3%);;
+
+		.date {
+			background-color: #fff;
+			width: 44px;
+			height: 44px;
+			padding-top: 7px;
+			border-radius: 3px;
+			display: inline-block;
+
+			font-family: $circularBold;
+			text-align: center;
+
+			.day {
+				font-size: 18px;
+				color: $purple;
+			}
+			.month {
+				font-size: 10px;
+				text-transform: uppercase;
+				color: lighten($purple, 10%);
+			}
+		}
+
+		.description {
+			display: inline-block;
+			margin-left: 10px;
+			vertical-align: top;
+			width: 195px;
+			line-height: 18px;
+		}
+
+		&:last-child {
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
 ol {
 
 	li {

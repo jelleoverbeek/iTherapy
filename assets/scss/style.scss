@@ -48,6 +48,10 @@ a {
 hr {
 	border-color: lighten($blue-light, 10%);
 
+	&.dark-purple {
+		border-color: darken($purple, 10%);
+	}
+
 	&.blank {
 		border-color: transparent;
 	}

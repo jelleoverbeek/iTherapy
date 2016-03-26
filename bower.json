@@ -1,0 +1,22 @@
+{
+  "name": "itherapy",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Jelle Overbeek <overbeekjelle@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jelleoverbeek/iTherapy",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6"
+  }
+}
