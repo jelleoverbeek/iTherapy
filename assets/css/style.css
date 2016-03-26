@@ -983,12 +983,18 @@ h6 {
   color: #38496E;
   margin-bottom: 10px; }
 
+b, strong {
+  font-family: "CircularMedium", Arial, sans-serif;
+  font-weight: normal; }
+
 p {
   font-family: "CircularBook", Arial, sans-serif;
   color: #B2B8C7;
   line-height: 21px;
   font-size: 14px;
   margin-bottom: 8px; }
+  p b {
+    color: #38496E; }
 
 .message {
   padding: 10px;
@@ -1022,4 +1028,9 @@ p {
 .forgot-password-widget {
   width: 490px;
   height: 287px;
+  padding: 40px; }
+
+.forgot-password-success-widget {
+  width: 490px;
+  height: 199px;
   padding: 40px; }
