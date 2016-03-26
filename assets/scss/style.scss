@@ -13,6 +13,11 @@ body {
 	font-size: 14px;
 }
 
+.container {
+	width: 1024px;
+	margin: 40px auto;
+}
+
 h1 {
 	font-family: $circularBold;
 	font-size: 22px;
@@ -60,6 +65,7 @@ p {
 	color: $blue-light;
 	line-height: 21px;
 	font-size: 14px;
+	margin-bottom: 8px;
 }
 
 a {
@@ -69,10 +75,6 @@ a {
 	&:focus, &:active {
 
 	}
-}
-
-form {
-	margin: 15px 0;
 }
 
 label {
@@ -141,18 +143,30 @@ select {
 	}
 }
 
-select {
-
-	option {
-
-	}
-}
-
 ul {
 
 	li {
 
 	}
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.clearfix {
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.full-width {
+	width: 100%;
 }
 
 @import "components/buttons";

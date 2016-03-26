@@ -59,6 +59,10 @@ body {
   font-family: "CircularBook", Arial, sans-serif;
   font-size: 14px; }
 
+.container {
+  width: 1024px;
+  margin: 40px auto; }
+
 h1 {
   font-family: "CircularBold", Arial, sans-serif;
   font-size: 22px;
@@ -99,10 +103,8 @@ p {
   font-family: "CircularBook", Arial, sans-serif;
   color: #B2B8C7;
   line-height: 21px;
-  font-size: 14px; }
-
-form {
-  margin: 15px 0; }
+  font-size: 14px;
+  margin-bottom: 8px; }
 
 label {
   display: block;
@@ -159,6 +161,21 @@ select {
   select option {
     font-family: "CircularBook", Arial, sans-serif; }
 
+.right {
+  float: right; }
+
+.left {
+  float: left; }
+
+.clearfix {
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+.full-width {
+  width: 100%; }
+
 input[type="submit"], .btn, button {
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3px;
@@ -168,6 +185,7 @@ input[type="submit"], .btn, button {
   font-family: "CircularBold", Arial, sans-serif;
   font-size: 14px;
   color: #fff;
+  text-align: center;
   -webkit-transition: all ease-in-out 0.1s;
   -moz-transition: all ease-in-out 0.1s;
   -ms-transition: all ease-in-out 0.1s;
@@ -190,7 +208,7 @@ input[type="submit"], .btn, button {
 
 .btn-primary {
   background: #6752FF;
-  border: 1px solid #3a1fff; }
+  border: 1px solid #482eff; }
   .btn-primary:hover {
     background: #5a43ff; }
   .btn-primary:active {
@@ -198,7 +216,7 @@ input[type="submit"], .btn, button {
 
 .btn-secondary {
   background: #B2B8C7;
-  border: 1px solid #949db2; }
+  border: 1px solid #9da5b8; }
   .btn-secondary:hover {
     background: #a9b0c1; }
   .btn-secondary:active {
@@ -206,7 +224,7 @@ input[type="submit"], .btn, button {
 
 .message {
   padding: 10px;
-  margin: 5px 0;
+  margin: 8px 0 10px 0;
   border: 1px solid;
   font-weight: bold;
   border-radius: 3px; }

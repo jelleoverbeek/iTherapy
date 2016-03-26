@@ -8,6 +8,7 @@ input[type="submit"], .btn, button {
 	font-family: $circularBold;
 	font-size: 14px;
 	color: $white;
+	text-align: center;
 
 	@include transition(0.1s);
 
@@ -35,7 +36,7 @@ input[type="submit"], .btn, button {
 
 .btn-primary {
 	background: $purple;
-	border: 1px solid darken($purple, 10%);
+	border: 1px solid darken($purple, 7%);
 
 	&:hover {
 		background: darken($purple, 3%);
@@ -48,7 +49,7 @@ input[type="submit"], .btn, button {
 
 .btn-secondary {
 	background: $blue-light;
-	border: 1px solid darken($blue-light, 10%);
+	border: 1px solid darken($blue-light, 7%);
 
 	&:hover {
 		background: darken($blue-light, 3%);
