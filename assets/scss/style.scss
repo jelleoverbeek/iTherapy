@@ -1,4 +1,13 @@
 @import "reset";
+
+$enable-flex:               true;
+$enable-grid-classes:       true;
+
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss';
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss';
+
 @import "library/colors";
 @import "library/fonts";
 @import "library/mixins";
@@ -20,14 +29,14 @@ body {
 
 h1 {
 	font-family: $circularBold;
-	font-size: 22px;
+	font-size: 24px;
 	color: $blue;
 	margin-bottom: 15px;
 }
 
 h2 {
 	font-family: $circularMedium;
-	font-size: 20px;
+	font-size: 24px;
 	color: $blue;
 	margin-bottom: 10px;
 }
@@ -69,11 +78,16 @@ p {
 }
 
 a {
+	color: $purple;
+	font-family: $circularMedium;
+	text-decoration: none;
+
 	&:hover {
-
+		color: darken($purple, 10%);
 	}
-	&:focus, &:active {
 
+	&:focus, &:active {
+		color: darken($purple, 12%);
 	}
 }
 
@@ -150,12 +164,48 @@ ul {
 	}
 }
 
+hr {
+	border-color: lighten($blue-light, 10%);
+
+	&.blank {
+		border-color: transparent;
+	}
+}
+
+.margin-top-10 {
+	margin-top: 10px;
+}
+
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+.margin-top-30 {
+	margin-top: 30px;
+}
+
+.margin-top-40 {
+	margin-top: 40px;
+}
+
+.no-padding {
+	padding: 0;
+}
+
 .right {
 	float: right;
 }
 
 .left {
 	float: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
 }
 
 .clearfix {
@@ -167,6 +217,15 @@ ul {
 
 .full-width {
 	width: 100%;
+}
+
+.absolute-center {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
 }
 
 @import "components/buttons";

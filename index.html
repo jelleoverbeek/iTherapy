@@ -7,23 +7,30 @@
     <link rel="stylesheet" href="/assets/css/shavonda.css">
 </head>
 <body>
-    <div class="container">
-        <div class="widget" style="width: 400px;">
-            <h3>Inloggen</h3>
-            <p>U kunt deze applicatie alleen gebruiken wanneer u een account heeft gekregen van uw therapeut.</p>
-            <form action="">
-                <label for="">Email</label>
-                <input type="email" placeholder="E-mail"/>
 
-                <label for="">Password</label>
+    <div class="container">
+        <div class="widget login-widget absolute-center">
+            <h2>Inloggen</h2>
+            <p>U kunt deze applicatie alleen gebruiken wanneer u een account heeft gekregen van uw therapeut.</p>
+
+            <form action="dashboard.html">
+                <input type="email" placeholder="E-mail"/>
                 <input type="password" placeholder="Wachtwoord"/>
+                <input type="submit" class="btn-primary" value="inloggen">
             </form>
 
-            <button class="btn-primary full-width">
-                Inloggen
-            </button>
+            <hr class="blank margin-top-20"/>
+
+            <div class="col-md-6 no-padding">
+                <a href="forgot-password.html">Wachtwoord vergeten?</a>
+            </div>
+            <div class="col-md-6 no-padding align-right">
+                <a href="demo.html">Demo bekijken</a>
+            </div>
 
         </div>
     </div>
+
+
 </body>
 </html>

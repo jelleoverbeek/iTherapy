@@ -1,4 +1,5 @@
 input[type="submit"], .btn, button {
+	display: block;
 	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.2);
 	border-radius: 3px;
 	height: 35px;
@@ -9,15 +10,18 @@ input[type="submit"], .btn, button {
 	font-size: 14px;
 	color: $white;
 	text-align: center;
+	text-decoration: none;
 
 	@include transition(0.1s);
 
 	&:hover {
 		box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+		color: $white;
 	}
 
 	&:active {
 		box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+		color: $white;
 	}
 
 	&:focus {
