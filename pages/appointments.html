@@ -48,46 +48,49 @@
 <div class="container">
     <div class="widget">
         <ul class="appointments-detail">
-            <li>
+
+            <li class="info">
                 <div class="row">
-                    <div class="col-md-3 date">
+                    <div class="13dec col-md-3 meta-data date">
                         <span class="label">Wanneer</span>
                         <p><b>13 december 2016</b></p>
                     </div>
-                    <div class="col-md-3 description">
+                    <div class="13dec col-md-3 meta-data description">
                         <span class="label">Omschrijving</span>
                         <p>Consult met <a href="info-phil.html">Phil Andersen</a></p>
                     </div>
-                    <div class="col-md-3 location">
+                    <div class="13dec col-md-3 meta-data location">
                         <span class="label">Locatie</span>
                         <p>Kalverstraat 10, Amsterdam</p>
                     </div>
                     <div class="col-md-3 actions align-right">
-                        <a href="#" class="btn btn-secondary btn-small">Annuleren</a>
-                        <a href="#" class="btn btn-secondary btn-small btn-export">
+                        <div id="cancel-13dec-status" class="status aborted hidden">Geannuleerd</div>
+                        <a id="cancel-13dec" href="#" class="btn btn-secondary btn-small">Annuleren</a>
+                        <a href="#" class="13dec btn btn-secondary btn-small btn-export">
                             <img src="/assets/img/export.png" srcset="/assets/img/export.png 1x, /assets/img/export@2x.png 2x">
                         </a>
                     </div>
                 </div>
             </li>
 
-            <li>
+            <li class="info">
                 <div class="row">
-                    <div class="col-md-3 date">
+                    <div class="20dec col-md-3 meta-data date">
                         <span class="label">Wanneer</span>
                         <p><b>20 december 2016</b></p>
                     </div>
-                    <div class="col-md-3 description">
+                    <div class="20dec col-md-3 meta-data description">
                         <span class="label">Omschrijving</span>
                         <p>Telefonisch consult met <a href="info-phil.html">Phil Andersen</a></p>
                     </div>
-                    <div class="col-md-3 location">
+                    <div class="20dec col-md-3 meta-data location">
                         <span class="label">Locatie</span>
                         <p>N.v.t.</p>
                     </div>
                     <div class="col-md-3 actions align-right">
-                        <a href="#" class="btn btn-secondary btn-small">Annuleren</a>
-                        <a href="#" class="btn btn-secondary btn-small btn-export">
+                        <div id="cancel-20dec-status" class="status aborted hidden">Geannuleerd</div>
+                        <a id="cancel-20dec" href="#" class="btn btn-secondary btn-small">Annuleren</a>
+                        <a href="#" class="20dec btn btn-secondary btn-small btn-export">
                             <img src="/assets/img/export.png" srcset="/assets/img/export.png 1x, /assets/img/export@2x.png 2x">
                         </a>
                     </div>
@@ -102,6 +105,75 @@
             </button>
         </div>
 
+    </div>
+</div>
+
+<div id="cancel-13dec-modal" class="modal-bg hidden">
+    <div class="modal">
+        <h3>Afspraak annuleren</h3>
+        <div  class="message error-message">U staat op het punt de volgende afspraak te annuleren</div>
+
+        <div class="info-box">
+            <div class="date">
+                <span class="label">Wanneer</span>
+                <p><b>13 december 2016</b></p>
+            </div>
+            <div class="description">
+                <span class="label">Omschrijving</span>
+                <p>Telefonisch consult met <a href="info-phil.html">Phil Andersen</a></p>
+            </div>
+            <div class="location">
+                <span class="label">Locatie</span>
+                <p>N.v.t.</p>
+            </div>
+        </div>
+
+        <label class="margin-top-20" for="reason">Eventueel kunt u hier een reden opgeven:</label>
+        <textarea class="margin-top-5" name="reason" id="reason" cols="30" rows="6"></textarea>
+
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="btn btn-secondary cancel-13dec-submit">Terug</a>
+            </div>
+            <div class="col-md-8">
+                <a href="#" class="btn btn-primary cancel-13dec-submit">Afspraak annuleren</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="cancel-20dec-modal" class="modal-bg hidden">
+    <div class="modal">
+        <h3>Afspraak annuleren</h3>
+        <div  class="message error-message">U staat op het punt de volgende afspraak te annuleren</div>
+
+        <div class="info-box">
+            <div class="date">
+                <span class="label">Wanneer</span>
+                <p><b>20 december 2016</b></p>
+            </div>
+            <div class="description">
+                <span class="label">Omschrijving</span>
+                <p>Telefonisch consult met <a href="info-phil.html">Phil Andersen</a></p>
+            </div>
+            <div class="location">
+                <span class="label">Locatie</span>
+                <p>N.v.t.</p>
+            </div>
+        </div>
+
+        <label class="margin-top-20" for="reason">Eventueel kunt u hier een reden opgeven:</label>
+        <textarea class="margin-top-5" name="reason" id="reason" cols="30" rows="6"></textarea>
+
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="btn btn-secondary cancel-20dec-submit">Terug</a>
+            </div>
+            <div class="col-md-8">
+                <a href="#" class="btn btn-primary cancel-20dec-submit">Afspraak annuleren</a>
+            </div>
+        </div>
     </div>
 </div>
 

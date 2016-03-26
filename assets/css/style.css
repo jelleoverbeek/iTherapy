@@ -784,6 +784,9 @@ hr {
   hr.blank {
     border-color: transparent; }
 
+.margin-top-5 {
+  margin-top: 5px; }
+
 .margin-top-10 {
   margin-top: 10px; }
 
@@ -855,11 +858,11 @@ input[type="submit"], .btn, button {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: all ease-in-out 0.1s;
-  -moz-transition: all ease-in-out 0.1s;
-  -ms-transition: all ease-in-out 0.1s;
-  -o-transition: all ease-in-out 0.1s;
-  transition: all ease-in-out 0.1s; }
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
   input[type="submit"]:hover, .btn:hover, button:hover {
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
     color: #fff; }
@@ -867,6 +870,7 @@ input[type="submit"], .btn, button {
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
     color: #fff; }
   input[type="submit"]:focus, .btn:focus, button:focus {
+    color: #fff;
     outline: 0; }
   input[type="submit"] img, .btn img, button img {
     vertical-align: middle;
@@ -949,7 +953,16 @@ input {
 
 textarea {
   font-family: "CircularBook", Arial, sans-serif;
+  color: #38496E;
+  font-size: 14px;
   margin-bottom: 10px;
+  width: 100%;
+  padding: 7px;
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  resize: none;
   -webkit-transition: all ease-in-out 0.1s;
   -moz-transition: all ease-in-out 0.1s;
   -ms-transition: all ease-in-out 0.1s;
@@ -975,6 +988,22 @@ select {
   select option {
     font-family: "CircularBook", Arial, sans-serif; }
 
+.modal-bg {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
+  .modal-bg .modal {
+    background: #FFFFFF;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    width: 405px;
+    padding: 30px;
+    margin: 20px auto; }
+
 ul {
   padding-left: 18px; }
   ul li {
@@ -982,64 +1011,6 @@ ul {
     list-style: disc;
     color: #6752FF;
     line-height: 18px; }
-
-ul.appointments {
-  padding: 0; }
-  ul.appointments li {
-    padding: 0;
-    list-style: none;
-    color: #fff;
-    display: block;
-    margin-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #5a43ff; }
-    ul.appointments li .date {
-      background-color: #fff;
-      width: 44px;
-      height: 44px;
-      padding-top: 7px;
-      border-radius: 3px;
-      display: inline-block;
-      font-family: "CircularBold", Arial, sans-serif;
-      text-align: center; }
-      ul.appointments li .date .day {
-        font-size: 18px;
-        color: #6752FF; }
-      ul.appointments li .date .month {
-        font-size: 10px;
-        text-transform: uppercase;
-        color: #9485ff; }
-    ul.appointments li .description {
-      display: inline-block;
-      margin-left: 10px;
-      vertical-align: top;
-      width: 180px;
-      line-height: 18px; }
-    ul.appointments li:last-child {
-      border-bottom: 0;
-      padding-bottom: 0; }
-
-ul.appointments-detail {
-  padding: 0; }
-  ul.appointments-detail li {
-    display: block;
-    width: 100%;
-    padding: 0;
-    list-style: none;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #F1F1F1; }
-    ul.appointments-detail li p {
-      color: #38496E; }
-    ul.appointments-detail li .btn {
-      display: inline-block; }
-    ul.appointments-detail li .label {
-      font-family: "CircularBold", Arial, sans-serif;
-      text-transform: uppercase;
-      font-size: 10px;
-      color: #CACFDA; }
-    ul.appointments-detail li .actions {
-      vertical-align: middle; }
 
 img.avatar {
   border-radius: 50%; }
@@ -1100,8 +1071,8 @@ p {
   padding: 10px;
   margin: 8px 0 10px 0;
   border: 1px solid;
-  font-weight: bold;
-  border-radius: 3px; }
+  border-radius: 3px;
+  line-height: 18px; }
   .message a {
     font-weight: bold;
     text-decoration: underline; }
@@ -1232,3 +1203,95 @@ header {
     line-height: 18px; }
   .dashboard .action:last-child {
     margin-right: 0; }
+
+ul.appointments {
+  padding: 0; }
+  ul.appointments li {
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #5a43ff; }
+    ul.appointments li .date {
+      background-color: #fff;
+      width: 44px;
+      height: 44px;
+      padding-top: 7px;
+      border-radius: 3px;
+      display: inline-block;
+      font-family: "CircularBold", Arial, sans-serif;
+      text-align: center; }
+      ul.appointments li .date .day {
+        font-size: 18px;
+        color: #6752FF; }
+      ul.appointments li .date .month {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #9485ff; }
+    ul.appointments li .description {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: top;
+      width: 180px;
+      line-height: 18px; }
+    ul.appointments li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0; }
+
+ul.appointments-detail {
+  padding: 0; }
+  ul.appointments-detail li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #F1F1F1; }
+    ul.appointments-detail li .btn {
+      display: inline-block; }
+
+.info-box .meta-data, .info .meta-data {
+  -webkit-transition: all ease-in-out 0.3s;
+  -moz-transition: all ease-in-out 0.3s;
+  -ms-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s; }
+
+.info-box .label, .info .label {
+  font-family: "CircularBold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #CACFDA; }
+
+.info-box p, .info p {
+  color: #38496E; }
+
+.info-box .actions *, .info .actions * {
+  vertical-align: top; }
+
+.info-box {
+  padding: 20px;
+  border: 1px solid #E6E6E6; }
+
+.status {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-family: "CircularBlack", Arial, sans-serif;
+  font-size: 11px;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border-radius: 3px; }
+  .status.aborted {
+    background-color: #FF5E5E; }
+
+.hidden {
+  display: none; }
+
+.disabled {
+  opacity: 0.4;
+  cursor: default; }

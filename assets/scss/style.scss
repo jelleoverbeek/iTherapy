@@ -16,6 +16,7 @@ $screen-lg:                 9999px;
 @import "library/colors";
 @import "library/fonts";
 @import "library/mixins";
+@import "library/z-indices";
 
 * {
 	box-sizing: border-box;
@@ -61,6 +62,10 @@ hr {
 	&.blank {
 		border-color: transparent;
 	}
+}
+
+.margin-top-5 {
+	margin-top: 5px;
 }
 
 .margin-top-10 {
@@ -141,6 +146,7 @@ hr {
 
 @import "components/buttons";
 @import "components/form";
+@import "components/modal";
 @import "components/lists";
 @import "components/image-styles";
 @import "components/text-styles";
@@ -151,3 +157,13 @@ hr {
 @import "layout/footer";
 
 @import "views/dashboard";
+@import "views/appointments";
+
+.hidden {
+	display: none;
+}
+
+.disabled {
+	opacity: 0.4;
+	cursor: default;
+}
