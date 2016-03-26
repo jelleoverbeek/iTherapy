@@ -1,13 +1,21 @@
 ul {
-
+	padding-left: 18px;
 	li {
-
+		padding: 6px 0;
+		list-style: disc;
+		color: $purple;
+		line-height: 18px;
 	}
 }
 
 ul.appointments {
+	padding: 0;
 
 	li {
+		padding: 0;
+		list-style: none;
+		color: #fff;
+
 		display: block;
 		margin-top: 15px;
 		padding-bottom: 15px;

@@ -960,36 +960,52 @@ select {
   select option {
     font-family: "CircularBook", Arial, sans-serif; }
 
-ul.appointments li {
-  display: block;
-  margin-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #5a43ff; }
-  ul.appointments li .date {
-    background-color: #fff;
-    width: 44px;
-    height: 44px;
-    padding-top: 7px;
-    border-radius: 3px;
-    display: inline-block;
-    font-family: "CircularBold", Arial, sans-serif;
-    text-align: center; }
-    ul.appointments li .date .day {
-      font-size: 18px;
-      color: #6752FF; }
-    ul.appointments li .date .month {
-      font-size: 10px;
-      text-transform: uppercase;
-      color: #9485ff; }
-  ul.appointments li .description {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: top;
-    width: 180px;
+ul {
+  padding-left: 18px; }
+  ul li {
+    padding: 6px 0;
+    list-style: disc;
+    color: #6752FF;
     line-height: 18px; }
-  ul.appointments li:last-child {
-    border-bottom: 0;
-    padding-bottom: 0; }
+
+ul.appointments {
+  padding: 0; }
+  ul.appointments li {
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #5a43ff; }
+    ul.appointments li .date {
+      background-color: #fff;
+      width: 44px;
+      height: 44px;
+      padding-top: 7px;
+      border-radius: 3px;
+      display: inline-block;
+      font-family: "CircularBold", Arial, sans-serif;
+      text-align: center; }
+      ul.appointments li .date .day {
+        font-size: 18px;
+        color: #6752FF; }
+      ul.appointments li .date .month {
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #9485ff; }
+    ul.appointments li .description {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: top;
+      width: 180px;
+      line-height: 18px; }
+    ul.appointments li:last-child {
+      border-bottom: 0;
+      padding-bottom: 0; }
+
+img.avatar {
+  border-radius: 50%; }
 
 h1 {
   font-family: "CircularBold", Arial, sans-serif;
@@ -1039,6 +1055,9 @@ p {
   margin-bottom: 8px; }
   p b {
     color: #38496E; }
+
+.color-blue {
+  color: #38496E; }
 
 .message {
   padding: 10px;
@@ -1147,3 +1166,21 @@ header {
     right: 0;
     top: 78px;
     text-align: center; }
+
+.dashboard .action {
+  display: inline-block;
+  position: relative;
+  margin-right: 30px; }
+  .dashboard .action .notification {
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    background-color: #FF5E5E;
+    border-radius: 50%;
+    color: #fff;
+    font-family: "CircularBold", Arial, sans-serif; }
+  .dashboard .action:last-child {
+    margin-right: 0; }
