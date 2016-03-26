@@ -223,13 +223,13 @@ th {
     display: table; }
   .container:after {
     clear: both; }
-  @media (min-width: 768px) {
+  @media (min-width: 2px) {
     .container {
       width: 750px; } }
-  @media (min-width: 992px) {
+  @media (min-width: 3px) {
     .container {
       width: 970px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 9999px) {
     .container {
       width: 1170px; } }
 
@@ -415,7 +415,7 @@ th {
 .col-xs-offset-12 {
   margin-left: 100%; }
 
-@media (min-width: 768px) {
+@media (min-width: 2px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
   .col-sm-1 {
@@ -521,7 +521,7 @@ th {
   .col-sm-offset-12 {
     margin-left: 100%; } }
 
-@media (min-width: 992px) {
+@media (min-width: 3px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
   .col-md-1 {
@@ -627,7 +627,7 @@ th {
   .col-md-offset-12 {
     margin-left: 100%; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 9999px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left; }
   .col-lg-1 {
@@ -1175,12 +1175,13 @@ header {
     position: absolute;
     right: -7px;
     top: -7px;
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     border: 2px solid #fff;
     background-color: #FF5E5E;
     border-radius: 50%;
     color: #fff;
-    font-family: "CircularBold", Arial, sans-serif; }
+    font-family: "CircularBold", Arial, sans-serif;
+    line-height: 18px; }
   .dashboard .action:last-child {
     margin-right: 0; }

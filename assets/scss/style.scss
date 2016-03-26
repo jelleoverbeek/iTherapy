@@ -2,6 +2,12 @@
 
 $enable-flex:               true;
 $enable-grid-classes:       true;
+
+$screen-xs:                 1px;
+$screen-sm:                 2px;
+$screen-md:                 3px;
+$screen-lg:                 9999px;
+
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss';
