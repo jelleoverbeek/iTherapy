@@ -39,7 +39,7 @@ input[type="submit"], .btn, button {
 	font-size: 11px;
 	font-family: $circularBlack;
 	text-transform: uppercase;
-	line-height: 10px;
+	line-height: 29px;
 	padding: 0 10px;
 }
 
@@ -66,5 +66,18 @@ input[type="submit"], .btn, button {
 
 	&:active {
 		background: darken($blue-light, 6%);
+	}
+}
+
+.btn-danger {
+	background: $red;
+	border: 1px solid darken($red, 7%);
+
+	&:hover {
+		background: darken($red, 3%);
+	}
+
+	&:active {
+		background: darken($red, 6%);
 	}
 }

@@ -1,3 +1,59 @@
 header {
+	width: 1024px;
+	height: 45px;
+	margin: 30px auto;
+	padding: 0 40px;
 
+	.user {
+		display: table-row;
+
+		.avatar {
+			display: table-cell;
+			img {
+				border-radius: 50%;
+			}
+		}
+
+		.username {
+			display: table-cell;
+			font-family: $circularMedium;
+			font-size: 16px;
+			color: $blue;
+			padding: 0 8px;
+		}
+
+		.dropdown-indicator {
+			display: table-cell;
+		}
+	}
+
+	.page-title {
+		font-family: $circularBold;
+		font-size: 17px;
+		color: $blue;
+		line-height: 45px;
+	}
+
+	.back-button {
+
+	}
+
+	.action-buttons {
+		margin-top: 7px;
+
+		.btn-danger {
+			display: inline-block;
+			vertical-align: top;
+
+			img {
+				margin-left: 0;
+				margin-right: 5px;
+				margin-top: -2px;
+			}
+		}
+
+		& > img {
+			margin-left: 30px;
+		}
+	}
 }
