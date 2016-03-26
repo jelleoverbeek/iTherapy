@@ -58,6 +58,42 @@ ul.appointments {
 	}
 }
 
+ul.appointments-detail {
+	padding: 0;
+
+	li {
+		display: block;
+		width: 100%;
+		padding: 0;
+		list-style: none;
+
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #F1F1F1;
+
+
+
+		p {
+			color: $blue;
+		}
+
+		.btn {
+			display: inline-block;
+		}
+
+		.label {
+			font-family: $circularBold;
+			text-transform: uppercase;
+			font-size: 10px;
+			color: #CACFDA;
+		}
+
+		.actions {
+			vertical-align: middle;
+		}
+	}
+}
+
 ol {
 
 	li {

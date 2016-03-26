@@ -57,15 +57,15 @@ input[type="submit"], .btn, button {
 }
 
 .btn-secondary {
-	background: $blue-light;
-	border: 1px solid darken($blue-light, 7%);
+	background: #747F97;
+	border: 1px solid darken(#747F97, 7%);
 
 	&:hover {
-		background: darken($blue-light, 3%);
+		background: darken(#747F97, 3%);
 	}
 
 	&:active {
-		background: darken($blue-light, 6%);
+		background: darken(#747F97, 6%);
 	}
 }
 
@@ -79,5 +79,26 @@ input[type="submit"], .btn, button {
 
 	&:active {
 		background: darken($red, 6%);
+	}
+}
+
+.btn-export {
+	padding: 0 6px;
+	margin-left: 5px;
+
+	img {
+		margin-top: 6px;
+		vertical-align: top;
+	}
+}
+
+.btn-new-appointment {
+	display: inline-block;
+	height: 40px;
+	padding-left: 10px;
+
+	img {
+		vertical-align: middle;
+		margin-right: 8px;
 	}
 }

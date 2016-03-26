@@ -34,8 +34,18 @@ header {
 		line-height: 45px;
 	}
 
-	.back-button {
+	.back {
+		font-family: $circularMedium;
+		color: $purple;
+		font-size: 17px;
+		height: 45px;
 
+		line-height: 45px;
+
+		img {
+			vertical-align: middle;
+			margin-right: 3px;
+		}
 	}
 
 	.action-buttons {

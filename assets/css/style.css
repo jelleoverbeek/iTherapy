@@ -889,12 +889,12 @@ input[type="submit"], .btn, button {
     background: #4c33ff; }
 
 .btn-secondary {
-  background: #B2B8C7;
-  border: 1px solid #9da5b8; }
+  background: #747F97;
+  border: 1px solid #636d84; }
   .btn-secondary:hover {
-    background: #a9b0c1; }
+    background: #6c7790; }
   .btn-secondary:active {
-    background: #a0a8ba; }
+    background: #657087; }
 
 .btn-danger {
   background: #FF5E5E;
@@ -903,6 +903,21 @@ input[type="submit"], .btn, button {
     background: #ff4f4f; }
   .btn-danger:active {
     background: #ff3f3f; }
+
+.btn-export {
+  padding: 0 6px;
+  margin-left: 5px; }
+  .btn-export img {
+    margin-top: 6px;
+    vertical-align: top; }
+
+.btn-new-appointment {
+  display: inline-block;
+  height: 40px;
+  padding-left: 10px; }
+  .btn-new-appointment img {
+    vertical-align: middle;
+    margin-right: 8px; }
 
 label {
   display: block;
@@ -1004,6 +1019,28 @@ ul.appointments {
       border-bottom: 0;
       padding-bottom: 0; }
 
+ul.appointments-detail {
+  padding: 0; }
+  ul.appointments-detail li {
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #F1F1F1; }
+    ul.appointments-detail li p {
+      color: #38496E; }
+    ul.appointments-detail li .btn {
+      display: inline-block; }
+    ul.appointments-detail li .label {
+      font-family: "CircularBold", Arial, sans-serif;
+      text-transform: uppercase;
+      font-size: 10px;
+      color: #CACFDA; }
+    ul.appointments-detail li .actions {
+      vertical-align: middle; }
+
 img.avatar {
   border-radius: 50%; }
 
@@ -1084,7 +1121,8 @@ p {
   padding: 25px; }
   .widget.featured {
     background: #6752FF;
-    color: #fff; }
+    color: #fff;
+    cursor: pointer; }
     .widget.featured h1, .widget.featured h2, .widget.featured h3, .widget.featured h4 {
       color: #fff; }
 
@@ -1127,6 +1165,15 @@ header {
     font-size: 17px;
     color: #38496E;
     line-height: 45px; }
+  header .back {
+    font-family: "CircularMedium", Arial, sans-serif;
+    color: #6752FF;
+    font-size: 17px;
+    height: 45px;
+    line-height: 45px; }
+    header .back img {
+      vertical-align: middle;
+      margin-right: 3px; }
   header .action-buttons {
     margin-top: 7px; }
     header .action-buttons .btn-danger {

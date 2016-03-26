@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>iTherapy</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- scripts -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+</head>
+<body>
+
+<header>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="back">
+                <a href="dashboard.html">
+                    <img src="/assets/img/back-arrow-big.png" srcset="/assets/img/back-arrow-big.png 1x, /assets/img/back-arrow-big@2x.png 2x">
+                    Terug
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 align-center">
+            <div class="page-title">
+                Afspraken
+            </div>
+        </div>
+
+        <div class="col-md-4 align-right">
+            <div class="action-buttons">
+                <a href="emergency-call.html" class="btn btn-small btn-danger">
+                    <img src="/assets/img/phone-white.png" srcset="/assets/img/phone-white.png 1x, /assets/img/phone-white@2x.png 2x">
+                    Noodoproep
+                </a>
+                <img src="/assets/img/volume.png" srcset="/assets/img/volume.png 1x, /assets/img/volume@2x.png 2x">
+                <img src="/assets/img/settings.png" srcset="/assets/img/settings.png 1x, /assets/img/settings@2x.png 2x">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="widget">
+        <ul class="appointments-detail">
+            <li>
+                <div class="row">
+                    <div class="col-md-3 date">
+                        <span class="label">Wanneer</span>
+                        <p><b>13 december 2016</b></p>
+                    </div>
+                    <div class="col-md-3 description">
+                        <span class="label">Omschrijving</span>
+                        <p>Consult met <a href="info-phil.html">Phil Andersen</a></p>
+                    </div>
+                    <div class="col-md-3 location">
+                        <span class="label">Locatie</span>
+                        <p>Kalverstraat 10, Amsterdam</p>
+                    </div>
+                    <div class="col-md-3 actions align-right">
+                        <a href="#" class="btn btn-secondary btn-small">Annuleren</a>
+                        <a href="#" class="btn btn-secondary btn-small btn-export">
+                            <img src="/assets/img/export.png" srcset="/assets/img/export.png 1x, /assets/img/export@2x.png 2x">
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="row">
+                    <div class="col-md-3 date">
+                        <span class="label">Wanneer</span>
+                        <p><b>20 december 2016</b></p>
+                    </div>
+                    <div class="col-md-3 description">
+                        <span class="label">Omschrijving</span>
+                        <p>Telefonisch consult met <a href="info-phil.html">Phil Andersen</a></p>
+                    </div>
+                    <div class="col-md-3 location">
+                        <span class="label">Locatie</span>
+                        <p>N.v.t.</p>
+                    </div>
+                    <div class="col-md-3 actions align-right">
+                        <a href="#" class="btn btn-secondary btn-small">Annuleren</a>
+                        <a href="#" class="btn btn-secondary btn-small btn-export">
+                            <img src="/assets/img/export.png" srcset="/assets/img/export.png 1x, /assets/img/export@2x.png 2x">
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="align-right">
+            <button class="btn btn-primary btn-new-appointment">
+                <img src="/assets/img/plus.png" srcset="/assets/img/plus.png 1x, /assets/img/plus@2x.png 2x">
+                Nieuwe afspraak maken
+            </button>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
