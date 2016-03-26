@@ -27,4 +27,21 @@
 			padding-right: 0;
 		}
 	}
+
+	.treatment-progress-graph {
+		position: relative;
+
+		.percentage {
+			position: absolute;
+			font-family: $circularBold;
+			font-size: 38px;
+			color: $purple;
+
+			left: 0;
+			right: 0;
+			top: 78px;
+
+			text-align: center;
+		}
+	}
 }

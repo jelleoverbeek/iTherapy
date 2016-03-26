@@ -5,8 +5,14 @@
     <title>iTherapy</title>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
 
+    <!-- stylesheets -->
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/shavonda.css">
+
+    <!-- scripts -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/Chart.js/Chart.js"></script>
+    <script src="/assets/js/app.js"></script>
+
 </head>
 <body>
 
@@ -34,7 +40,7 @@
             <div class="action-buttons">
                 <a href="emergency-call.html" class="btn btn-small btn-danger">
                     <img src="/assets/img/phone-white.png" srcset="/assets/img/phone-white.png 1x, /assets/img/phone-white@2x.png 2x">
-                    Nood oproep
+                    Noodoproep
                 </a>
                 <img src="/assets/img/volume.png" srcset="/assets/img/volume.png 1x, /assets/img/volume@2x.png 2x">
                 <img src="/assets/img/settings.png" srcset="/assets/img/settings.png 1x, /assets/img/settings@2x.png 2x">
@@ -45,15 +51,27 @@
 
 <div class="container dashboard">
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-8">
             <div class="widget">
                 <h3>Behaalde resultaten</h3>
+                <p>Uw score wordt bepaald aan de hand van de gevoelens die u ingevoerd heeft tijdens de test.</p>
+                <canvas id="emdr-results" width="540" height="250"></canvas>
             </div>
         </div>
 
-        <div class="col-md-5">
+        <div class="col-md-4">
             <div class="widget">
                 <h3>EMDR</h3>
+                <p>Eye Movement Desensitization and Reprocessing</p>
+                <div class="align-center">
+                    <div class="treatment-progress-graph">
+                        <canvas id="treatment-progress" class="margin-top-20" width="160" height="160"></canvas>
+                        <span class="percentage">70%</span>
+                    </div>
+                    <p class="margin-top-15">U bent op <b>75%</b> van uw behandeling</p>
+                </div>
+
+                <a href="edmr/step-1.png" class="btn btn-primary margin-top-15">Start test</a>
             </div>
         </div>
     </div>

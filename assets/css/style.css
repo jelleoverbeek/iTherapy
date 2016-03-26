@@ -787,6 +787,9 @@ hr {
 .margin-top-10 {
   margin-top: 10px; }
 
+.margin-top-15 {
+  margin-top: 15px; }
+
 .margin-top-20 {
   margin-top: 20px; }
 
@@ -982,7 +985,7 @@ ul.appointments li {
     display: inline-block;
     margin-left: 10px;
     vertical-align: top;
-    width: 195px;
+    width: 180px;
     line-height: 18px; }
   ul.appointments li:last-child {
     border-bottom: 0;
@@ -1059,7 +1062,7 @@ p {
   border: 1px solid #E5E5E5;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
   border-radius: 3px;
-  padding: 20px; }
+  padding: 25px; }
   .widget.featured {
     background: #6752FF;
     color: #fff; }
@@ -1132,3 +1135,15 @@ header {
   padding-left: 0; }
   .dashboard .col-md-1:last-child, .dashboard .col-md-2:last-child, .dashboard .col-md-3:last-child, .dashboard .col-md-4:last-child, .dashboard .col-md-5:last-child, .dashboard .col-md-6:last-child, .dashboard .col-md-7:last-child, .dashboard .col-md-8:last-child, .dashboard .col-md-9:last-child, .dashboard .col-md-10:last-child, .dashboard .col-md-11:last-child, .dashboard .col-md-12:last-child {
     padding-right: 0; }
+
+.dashboard .treatment-progress-graph {
+  position: relative; }
+  .dashboard .treatment-progress-graph .percentage {
+    position: absolute;
+    font-family: "CircularBold", Arial, sans-serif;
+    font-size: 38px;
+    color: #6752FF;
+    left: 0;
+    right: 0;
+    top: 78px;
+    text-align: center; }
