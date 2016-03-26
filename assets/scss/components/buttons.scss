@@ -27,6 +27,11 @@ input[type="submit"], .btn, button {
 	&:focus {
 		outline: 0;
 	}
+
+	img {
+		vertical-align: middle;
+		margin: 0 3px;
+	}
 }
 
 .btn-small {

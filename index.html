@@ -9,28 +9,33 @@
 <body>
 
     <div class="container">
+
         <div class="widget login-widget absolute-center">
             <h2>Inloggen</h2>
             <p>U kunt deze applicatie alleen gebruiken wanneer u een account heeft gekregen van uw therapeut.</p>
 
+            <hr class="blank margin-top-10"/>
+
             <form action="dashboard.html">
                 <input type="email" placeholder="E-mail"/>
                 <input type="password" placeholder="Wachtwoord"/>
-                <input type="submit" class="btn-primary" value="inloggen">
+                <button type="submit" class="btn-primary full-width">
+                    Inloggen <img src="/assets/img/arrow-right-dark.png" srcset="/assets/img/arrow-right-dark.png 1x, /assets/img/arrow-right-dark@2x.png 2x">
+                </button>
+
             </form>
 
             <hr class="blank margin-top-20"/>
 
             <div class="col-md-6 no-padding">
-                <a href="forgot-password.html">Wachtwoord vergeten?</a>
+                <a href="pages/forgot-password.html">Wachtwoord vergeten?</a>
             </div>
             <div class="col-md-6 no-padding align-right">
                 <a href="demo.html">Demo bekijken</a>
             </div>
-
         </div>
-    </div>
 
+    </div>
 
 </body>
 </html>

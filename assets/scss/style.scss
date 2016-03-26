@@ -2,7 +2,6 @@
 
 $enable-flex:               true;
 $enable-grid-classes:       true;
-
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss';
@@ -20,6 +19,9 @@ body {
 	background-color: #F5F5F5;
 	font-family: $circularBook;
 	font-size: 14px;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -27,60 +29,12 @@ body {
 	margin: 40px auto;
 }
 
-h1 {
-	font-family: $circularBold;
-	font-size: 24px;
-	color: $blue;
-	margin-bottom: 15px;
-}
-
-h2 {
-	font-family: $circularMedium;
-	font-size: 24px;
-	color: $blue;
-	margin-bottom: 10px;
-}
-
-h3 {
-	font-family: $circularMedium;
-	font-size: 18px;
-	color: $blue;
-	margin-bottom: 10px;
-}
-
-h4 {
-	font-family: $circularMedium;
-	font-size: 18px;
-	color: $blue-light;
-	margin-bottom: 10px;
-}
-
-h5 {
-	font-family: $circularMedium;
-	font-size: 18px;
-	color: $blue;
-	margin-bottom: 10px;
-}
-
-h6 {
-	font-family: $circularMedium;
-	font-size: 16px;
-	color: $blue;
-	margin-bottom: 10px;
-}
-
-p {
-	font-family: $circularBook;
-	color: $blue-light;
-	line-height: 21px;
-	font-size: 14px;
-	margin-bottom: 8px;
-}
-
 a {
 	color: $purple;
 	font-family: $circularMedium;
 	text-decoration: none;
+
+	@include transition(0.2s);
 
 	&:hover {
 		color: darken($purple, 10%);
@@ -88,79 +42,6 @@ a {
 
 	&:focus, &:active {
 		color: darken($purple, 12%);
-	}
-}
-
-label {
-	display: block;
-	font-family: $circularMedium;
-	color: $blue;
-	margin-bottom: 3px;
-}
-
-input {
-	font-family: $circularBook;
-	font-size: 14px;
-	margin-bottom: 10px;
-	padding-left: 7px;
-	height: 35px;
-	width: 100%;
-
-	@include transition(0.1s);
-
-	&[type="text"],
-	&[type="password"],
-	&[type="number"],
-	&[type="email"],
-	&[type="url"],
-	&[type="tel"],
-	&[type="search"] {
-		background: #FFFFFF;
-		border: 1px solid #DBDBDB;
-		box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
-		border-radius: 3px;
-	}
-
-	&:active, &:focus {
-		border: 1px solid lighten($purple, 8%);
-		outline: 0;
-	}
-}
-
-textarea {
-	font-family: $circularBook;
-	margin-bottom: 10px;
-
-	@include transition(0.1s);
-
-	&:active, &:focus {
-		border: 1px solid darken(#E7E7E7, 12%);
-		outline: 0;
-	}
-}
-
-select {
-	border: 1px solid #E7E7E7;
-	background-color: #fff;
-	height: 37px;
-	padding-left: 6px;
-	font-family: $circularBook;
-
-	@include transition(0.1s);
-
-	&:active, &:focus {
-		outline: 0;
-	}
-
-	option {
-		font-family: $circularBook;
-	}
-}
-
-ul {
-
-	li {
-
 	}
 }
 
@@ -192,20 +73,12 @@ hr {
 	padding: 0;
 }
 
-.right {
-	float: right;
-}
-
 .left {
 	float: left;
 }
 
-.align-right {
-	text-align: right;
-}
-
-.align-left {
-	text-align: left;
+.right {
+	float: right;
 }
 
 .clearfix {
@@ -213,6 +86,30 @@ hr {
 	display: block;
 	height: 0;
 	clear: both;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.vertical-align-top {
+	vertical-align: top;
+}
+
+.vertical-align-middle {
+	vertical-align: middle;
+}
+
+.vertical-align-bottom {
+	vertical-align: bottom;
 }
 
 .full-width {
@@ -229,8 +126,11 @@ hr {
 }
 
 @import "components/buttons";
+@import "components/form";
+@import "components/lists";
+@import "components/text-styles";
 @import "components/messages";
-@import "components/header";
-@import "components/nav";
-@import "components/footer";
 @import "components/widget";
+
+@import "layout/header";
+@import "layout/footer";
