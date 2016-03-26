@@ -110,4 +110,8 @@ ul.appointments-detail {
 	&.aborted {
 		background-color: $red;
 	}
+
+	&.pending {
+		background-color: #F5AA21;
+	}
 }

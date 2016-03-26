@@ -96,10 +96,33 @@
                     </div>
                 </div>
             </li>
+
+            <li id="25dec-item" class="info">
+                <div class="row">
+                    <div class="25dec col-md-3 meta-data date">
+                        <span class="label">Wanneer</span>
+                        <p><b>25 december 2016</b></p>
+                    </div>
+                    <div class="25dec col-md-3 meta-data description">
+                        <span class="label">Omschrijving</span>
+                        <p>Telefonisch consult met <a href="info-phil.html">Phil Andersen</a></p>
+                    </div>
+                    <div class="25dec col-md-3 meta-data location">
+                        <span class="label">Locatie</span>
+                        <p>N.v.t.</p>
+                    </div>
+                    <div class="col-md-3 actions align-right">
+                        <div class="status pending">In afwachting</div>
+                        <a href="#" class="25dec btn btn-secondary btn-small btn-export">
+                            <img src="/assets/img/export.png" srcset="/assets/img/export.png 1x, /assets/img/export@2x.png 2x">
+                        </a>
+                    </div>
+                </div>
+            </li>
         </ul>
 
         <div class="align-right">
-            <button class="btn btn-primary btn-new-appointment">
+            <button id="new-appointment" class="btn btn-primary btn-new-appointment">
                 <img src="/assets/img/plus.png" srcset="/assets/img/plus.png 1x, /assets/img/plus@2x.png 2x">
                 Nieuwe afspraak maken
             </button>
@@ -120,11 +143,11 @@
             </div>
             <div class="description">
                 <span class="label">Omschrijving</span>
-                <p>Telefonisch consult met <a href="info-phil.html">Phil Andersen</a></p>
+                <p>Consult met <a href="info-phil.html">Phil Andersen</a></p>
             </div>
             <div class="location">
                 <span class="label">Locatie</span>
-                <p>N.v.t.</p>
+                <p>Kalverstraat 10, Amsterdam</p>
             </div>
         </div>
 
@@ -133,10 +156,10 @@
 
         <div class="row">
             <div class="col-md-4">
-                <a href="#" class="btn btn-secondary cancel-13dec-submit">Terug</a>
+                <a href="#" id="cancel-13dec-cancel" class="btn btn-secondary">Terug</a>
             </div>
             <div class="col-md-8">
-                <a href="#" class="btn btn-primary cancel-13dec-submit">Afspraak annuleren</a>
+                <a href="#" id="cancel-13dec-submit" class="btn btn-primary">Afspraak annuleren</a>
             </div>
         </div>
     </div>
@@ -168,10 +191,45 @@
 
         <div class="row">
             <div class="col-md-4">
-                <a href="#" class="btn btn-secondary cancel-20dec-submit">Terug</a>
+                <a href="#" id="cancel-20dec-cancel" class="btn btn-secondary">Terug</a>
             </div>
             <div class="col-md-8">
-                <a href="#" class="btn btn-primary cancel-20dec-submit">Afspraak annuleren</a>
+                <a href="#" id="cancel-20dec-submit" class="btn btn-primary">Afspraak annuleren</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="new-appointment-modal" class="modal-bg hidden">
+    <div class="modal">
+        <h3>Nieuwe afspraak maken</h3>
+        <p>U kunt via dit scherm een afspraak inplannen bij uw therapeut. De therapeut moet de afspraak nog wel accepteren.</p>
+
+        <div class="info-box">
+            <div class="date">
+                <span class="label">Wanneer</span>
+                <input class="margin-top-5" type="text" value="17 december 2015">
+            </div>
+            <div class="description">
+                <span class="label">Omschrijving</span>
+                <div class="toggle-wrapper margin-top-5">
+                    <div class="toggle left-toggle active">Consult</div><div class="toggle right-toggle">Telefonisch consult</div>
+                </div>
+            </div>
+
+            <div class="location margin-top-10">
+                <span class="label">Locatie</span>
+                <p id="location" class="margin-top-5">Kalverstraat 10, Amsterdam <span class="color-red">(Niet aanpasbaar)</span></p>
+            </div>
+        </div>
+
+        <div class="row margin-top-20">
+            <div class="col-md-4">
+                <a href="#" id="new-appointment-cancel" class="btn btn-secondary">Terug</a>
+            </div>
+            <div class="col-md-8">
+                <a href="#" id="new-appointment-submit" class="btn btn-primary">Afspraak aanvragen</a>
             </div>
         </div>
     </div>

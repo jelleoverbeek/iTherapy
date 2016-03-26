@@ -75,3 +75,45 @@ select {
 		font-family: $circularBook;
 	}
 }
+
+.toggle-wrapper {
+	.toggle {
+		display: inline-block;
+		height: 35px;
+		width: 50%;
+
+		background-color: #fff;
+		border: 2px solid $purple;
+
+		font-family: $circularMedium;
+		color: $purple;
+
+		text-align: center;
+		line-height: 31px;
+
+		cursor: pointer;
+
+		@include transition();
+
+		&.left-toggle {
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+			border-right: 1px solid $purple;
+		}
+
+		&.right-toggle {
+			border-top-right-radius: 3px;
+			border-bottom-right-radius: 3px;
+			border-left: 1px solid $purple;
+		}
+
+		&:hover {
+			background-color: lighten($purple, 30%);
+		}
+
+		&.active {
+			background-color: $purple;
+			color: #fff;
+		}
+	}
+}
