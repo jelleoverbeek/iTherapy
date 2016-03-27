@@ -1019,13 +1019,14 @@ select {
     color: #fff; }
 
 .modal-bg {
-  position: absolute;
+  position: fixed;
   z-index: 50;
   left: 0;
   right: 0;
   bottom: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: auto; }
   .modal-bg .modal {
     background: #FFFFFF;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.05);
