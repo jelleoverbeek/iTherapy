@@ -201,7 +201,7 @@
 </div>
 
 
-<div id="new-appointment-modal" class="modal-bg hidden">
+<div id="new-appointment-modal" class="modal-bg">
     <div class="modal">
         <h3>Nieuwe afspraak maken</h3>
         <p>U kunt via dit scherm een afspraak inplannen bij uw therapeut. De therapeut moet de afspraak nog wel accepteren.</p>
@@ -209,9 +209,67 @@
         <div class="info-box">
             <div class="date">
                 <span class="label">Wanneer</span>
-                <input class="margin-top-5" type="text" value="17 december 2015">
+                <input class="margin-top-5 calendar-input" type="text" placeholder="17 december 2015">
+
+                <table class="calendar">
+                    <thead class="days">
+                        <th>M</th>
+                        <th>D</th>
+                        <th>W</th>
+                        <th>D</th>
+                        <th>V</th>
+                        <th>Z</th>
+                        <th>Z</th>
+                    </thead>
+                    <tr>
+                        <td class="other-month">30</td>
+                        <td>1</td>
+                        <td class="unavailable">2</td>
+                        <td class="unavailable">3</td>
+                        <td>4</td>
+                        <td class="greyed-out">5</td>
+                        <td class="greyed-out">6</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td class="unavailable">8</td>
+                        <td class="unavailable">9</td>
+                        <td class="unavailable">10</td>
+                        <td>11</td>
+                        <td class="greyed-out">12</td>
+                        <td class="greyed-out">13</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td class="unavailable">15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td class="greyed-out">19</td>
+                        <td class="greyed-out">20</td>
+                    </tr>
+                    <tr>
+                        <td>21</td>
+                        <td class="unavailable">22</td>
+                        <td>23</td>
+                        <td class="unavailable">24</td>
+                        <td>25</td>
+                        <td class="greyed-out">26</td>
+                        <td class="greyed-out">27</td>
+                    </tr>
+                    <tr>
+                        <td>28</td>
+                        <td>29</td>
+                        <td>30</td>
+                        <td class="unavailable">31</td>
+                        <td class="other-month">1</td>
+                        <td class="greyed-out other-month">2</td>
+                        <td class="greyed-out other-month">3</td>
+                    </tr>
+                </table>
+
             </div>
-            <div class="description">
+            <div class="description margin-top-10">
                 <span class="label">Omschrijving</span>
                 <div class="toggle-wrapper margin-top-5">
                     <div class="toggle left-toggle active">Consult</div><div class="toggle right-toggle">Telefonisch consult</div>

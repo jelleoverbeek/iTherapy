@@ -56,9 +56,13 @@ $(function() {
         $(this).addClass('active');
 
         if( $(".left-toggle").hasClass("active")) {
+            
             $("#location").html('Kalverstraat 10, Amsterdam <span class="color-red">(Niet aanpasbaar)</span>');
+            
         } else if( $(".right-toggle").hasClass("active")) {
+            
             $("#location").html('N.v.t. <span class="color-red">(Niet aanpasbaar)</span>');
+            
         }
     });
 

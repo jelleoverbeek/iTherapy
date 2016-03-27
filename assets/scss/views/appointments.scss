@@ -94,6 +94,7 @@ ul.appointments-detail {
 .info-box {
 	padding: 20px;
 	border: 1px solid #E6E6E6;
+	border-radius: 2px;
 }
 
 .status {
@@ -114,4 +115,80 @@ ul.appointments-detail {
 	&.pending {
 		background-color: #F5AA21;
 	}
+}
+
+input.calendar-input {
+	background-color: #fff;
+	background-image: url('../img/calendar@2x.png');
+	background-repeat: no-repeat;
+	background-position: 97% center;
+	background-size: 21px 23px;
+}
+
+.calendar {
+	table-layout: fixed;
+	width: 100%;
+
+	th {
+		font-family: $circularMedium;
+		font-size: 12px;
+		color: #E2E5EA;
+	}
+
+	td {
+		width: 43px;
+		height: 43px;
+		background-color: #fff;
+		border-right: 1px solid #E9E9E9;
+		border-top: 1px solid #E9E9E9;
+		text-align: center;
+		line-height: 43px;
+
+		font-family: $circularMedium;
+		font-size: 18px;
+		color: #6752FF;
+		cursor: pointer;
+
+		@include transition();
+
+		&:first-child {
+			border-left: 1px solid #E9E9E9;
+		}
+
+		&:hover {
+			background-color: lighten($purple, 30%);
+		}
+
+		&.unavailable {
+			color: #BEBEBE;
+			background-color: #fff;
+		}
+
+		&.greyed-out {
+			color: #BEBEBE;
+			background-color: #F3F3F3;
+		}
+
+		&.other-month {
+			color: rgba(190,190,190,0.5);
+			background-color: #fff;
+
+			&.greyed-out {
+				background-color: #F3F3F3;
+			}
+		}
+
+		&.selected {
+			background-color: $purple;
+			color: #fff;
+			box-shadow: inset 0 0 1px #5241CC;
+		}
+	}
+
+	tr:last-child {
+		td {
+			border-bottom: 1px solid #E9E9E9;
+		}
+	}
+
 }
