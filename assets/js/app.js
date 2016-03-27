@@ -66,4 +66,17 @@ $(function() {
         }
     });
 
+    $(".calendar .days td").click( function (){
+
+        if($(".calendar td.selected")) {
+            $(".calendar td.selected").removeClass('selected');
+        }
+
+        if($(this).hasClass('other-month') == false && $(this).hasClass('unavailable') == false && $(this).hasClass('greyed-out') == false) {
+                $(this).toggleClass('selected');
+                $(".calendar-input").val($(this).text() + " - 12 - 2016");
+        }
+
+    });
+    
 });

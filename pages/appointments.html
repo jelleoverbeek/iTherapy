@@ -66,7 +66,7 @@
                     <div class="col-md-3 actions align-right">
                         <div id="cancel-13dec-status" class="status aborted hidden">Geannuleerd</div>
                         <a id="cancel-13dec" href="#" class="btn btn-secondary btn-small">Annuleren</a>
-                        <a href="#" class="13dec btn btn-secondary btn-small btn-export">
+                        <a href="#" class="13dec btn btn-secondary btn-small btn-img">
                             <img src="/assets/img/export.png" srcset="/assets/img/export.png 1x, /assets/img/export@2x.png 2x">
                         </a>
                     </div>
@@ -90,7 +90,7 @@
                     <div class="col-md-3 actions align-right">
                         <div id="cancel-20dec-status" class="status aborted hidden">Geannuleerd</div>
                         <a id="cancel-20dec" href="#" class="btn btn-secondary btn-small">Annuleren</a>
-                        <a href="#" class="20dec btn btn-secondary btn-small btn-export">
+                        <a href="#" class="20dec btn btn-secondary btn-small btn-img">
                             <img src="/assets/img/export.png" srcset="/assets/img/export.png 1x, /assets/img/export@2x.png 2x">
                         </a>
                     </div>
@@ -113,7 +113,7 @@
                     </div>
                     <div class="col-md-3 actions align-right">
                         <div class="status pending">In afwachting</div>
-                        <a href="#" class="25dec btn btn-secondary btn-small btn-export">
+                        <a href="#" class="25dec btn btn-secondary btn-small btn-img">
                             <img src="/assets/img/export.png" srcset="/assets/img/export.png 1x, /assets/img/export@2x.png 2x">
                         </a>
                     </div>
@@ -209,10 +209,22 @@
         <div class="info-box">
             <div class="date">
                 <span class="label">Wanneer</span>
-                <input class="margin-top-5 calendar-input" type="text" placeholder="17 december 2015">
+                <input class="margin-top-5 calendar-input" type="text" placeholder="dd - mm - jjjj">
+
+                <table class="full-width">
+                    <tr class="month-navigation">
+                        <td colspan="1">
+                            <img src="/assets/img/arrow-left.png" srcset="/assets/img/arrow-left.png 1x, /assets/img/arrow-left@2x.png 2x">
+                        </td>
+                        <td colspan="5">December 2016</td>
+                        <td colspan="1">
+                            <img src="/assets/img/arrow-right.png" srcset="/assets/img/arrow-right.png 1x, /assets/img/arrow-right@2x.png 2x">
+                        </td>
+                    </tr>
+                </table>
 
                 <table class="calendar">
-                    <thead class="days">
+                    <thead>
                         <th>M</th>
                         <th>D</th>
                         <th>W</th>
@@ -221,7 +233,7 @@
                         <th>Z</th>
                         <th>Z</th>
                     </thead>
-                    <tr>
+                    <tr class="days">
                         <td class="other-month">30</td>
                         <td>1</td>
                         <td class="unavailable">2</td>
@@ -230,7 +242,7 @@
                         <td class="greyed-out">5</td>
                         <td class="greyed-out">6</td>
                     </tr>
-                    <tr>
+                    <tr class="days">
                         <td>7</td>
                         <td class="unavailable">8</td>
                         <td class="unavailable">9</td>
@@ -239,7 +251,7 @@
                         <td class="greyed-out">12</td>
                         <td class="greyed-out">13</td>
                     </tr>
-                    <tr>
+                    <tr class="days">
                         <td>14</td>
                         <td class="unavailable">15</td>
                         <td>16</td>
@@ -248,7 +260,7 @@
                         <td class="greyed-out">19</td>
                         <td class="greyed-out">20</td>
                     </tr>
-                    <tr>
+                    <tr class="days">
                         <td>21</td>
                         <td class="unavailable">22</td>
                         <td>23</td>
@@ -257,7 +269,7 @@
                         <td class="greyed-out">26</td>
                         <td class="greyed-out">27</td>
                     </tr>
-                    <tr>
+                    <tr class="days">
                         <td>28</td>
                         <td>29</td>
                         <td>30</td>

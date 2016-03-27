@@ -135,7 +135,7 @@ input.calendar-input {
 		color: #E2E5EA;
 	}
 
-	td {
+	.days td {
 		width: 43px;
 		height: 43px;
 		background-color: #fff;
@@ -185,10 +185,23 @@ input.calendar-input {
 		}
 	}
 
-	tr:last-child {
+	tr:nth-child(5) {
 		td {
 			border-bottom: 1px solid #E9E9E9;
 		}
 	}
+}
 
+.month-navigation {
+	td {
+		padding-top: 3px;
+		font-size: 16px;
+		color: $blue;
+		padding-bottom: 13px;
+		text-align: center;
+
+		img {
+			cursor: pointer;
+		}
+	}
 }
