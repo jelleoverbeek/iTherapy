@@ -1316,6 +1316,34 @@ p.note {
   height: 199px;
   padding: 40px; }
 
+.results-widget {
+  position: relative; }
+  .results-widget .results-popover {
+    position: absolute;
+    top: 58px;
+    right: 0;
+    background: #6752FF;
+    box-shadow: 0 1px 24px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 3px;
+    width: 250px;
+    padding: 20px; }
+    .results-widget .results-popover::before {
+      position: absolute;
+      top: -10px;
+      right: 25px;
+      content: ' ';
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 10px 10px 10px;
+      border-color: transparent transparent #6752FF transparent; }
+    .results-widget .results-popover h6 {
+      color: #fff; }
+    .results-widget .results-popover p {
+      color: #fff; }
+      .results-widget .results-popover p:last-child {
+        margin-bottom: 0; }
+
 header {
   width: 1024px;
   height: 45px;

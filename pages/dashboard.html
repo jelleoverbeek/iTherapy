@@ -96,10 +96,20 @@
 <div class="container dashboard">
     <div class="row">
         <div class="col-md-8">
-            <div class="widget">
+            <div class="widget results-widget">
+                <img id="results-information" class="right" width="20" src="/assets/img/information.png" srcset="/assets/img/information.png 1x, /assets/img/information@2x.png 2x">
                 <h3>Behaalde resultaten</h3>
-                <p>Uw score wordt bepaald aan de hand van de gevoelens die u ingevoerd heeft tijdens de test.</p>
-                <canvas id="emdr-results" width="540" height="250"></canvas>
+                <!--<p>Uw score wordt bepaald aan de hand van de gevoelens die u ingevoerd heeft tijdens de test.</p>-->
+
+                <label class="margin-top-20">Gemiddelde score</label>
+                <canvas id="emdr-results" width="540" height="275"></canvas>
+                <label class="align-right">Datum</label>
+
+                <div class="results-popover hidden">
+                    <h6>Hoe de grafiek werkt:</h6>
+                    <p>De getallen aan de linkerkant zijn de score die u behaald heeft bij de EMDR test.</p>
+                    <p>De datums aan de onderkant zijn de datums waarop de betreffende test is uitgevoerd.</p>
+                </div>
             </div>
         </div>
 

@@ -127,6 +127,10 @@ $(function() {
         $("#user-actions").fadeToggle(150);
     });
 
+    $('#results-information').click( function() {
+        $('.results-popover').fadeToggle(150);
+    })
+
     var volumeSlider = $('#volume-slider').rangeslider({ polyfill: false });
 
     $('#volume-min').click( function() {
