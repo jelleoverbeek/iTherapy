@@ -11,7 +11,9 @@
     <!-- scripts -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/Chart.js/Chart.js"></script>
+    <script src="/bower_components/rangeslider.js/dist/rangeslider.js"></script>
     <script src="/assets/js/charts.js"></script>
+    <script src="/assets/js/app.js"></script>
 
 </head>
 <body>
@@ -42,8 +44,22 @@
                     <img src="/assets/img/phone-white.png" srcset="/assets/img/phone-white.png 1x, /assets/img/phone-white@2x.png 2x">
                     Noodoproep
                 </a>
-                <img src="/assets/img/volume.png" srcset="/assets/img/volume.png 1x, /assets/img/volume@2x.png 2x">
+                <img id="toggle-volume-control" src="/assets/img/volume.png" srcset="/assets/img/volume.png 1x, /assets/img/volume@2x.png 2x">
                 <img src="/assets/img/settings.png" srcset="/assets/img/settings.png 1x, /assets/img/settings@2x.png 2x">
+            </div>
+        </div>
+    </div>
+    
+    <div id="volume-control" class="hidden">
+        <div class="row">
+            <div class="col-md-2">
+                <img id="volume-min" src="/assets/img/volume-min.png" srcset="/assets/img/volume-min.png 1x, /assets/img/volume-min@2x.png 2x">
+            </div>
+            <div class="col-md-8">
+                <input type="range" id="volume-slider" min="0" max="100">
+            </div>
+            <div class="col-md-2">
+                <img id="volume-max" src="/assets/img/volume-max.png" srcset="/assets/img/volume-max.png 1x, /assets/img/volume-max@2x.png 2x">
             </div>
         </div>
     </div>

@@ -1106,6 +1106,37 @@ input[type="range"]:focus + .rangeslider .rangeslider__handle {
   -webkit-box-shadow: 0 0 8px rgba(255, 0, 255, 0.9);
   box-shadow: 0 0 8px rgba(255, 0, 255, 0.9); }
 
+#volume-control {
+  position: absolute;
+  top: 55px;
+  right: 82px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 24px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+  width: 325px;
+  padding: 20px;
+  vertical-align: middle;
+  text-align: center;
+  z-index: 100; }
+  #volume-control #volume-min {
+    margin-top: 3px; }
+  #volume-control .rangeslider--horizontal {
+    margin-top: 8px;
+    height: 5px; }
+  #volume-control .rangeslider__handle {
+    width: 25px;
+    height: 25px; }
+  #volume-control::before {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #ffffff transparent; }
+
 .modal-bg {
   position: fixed;
   z-index: 50;
@@ -1253,7 +1284,8 @@ header {
   width: 1024px;
   height: 45px;
   margin: 30px auto;
-  padding: 0 40px; }
+  padding: 0 40px;
+  position: relative; }
   header .user {
     display: table-row; }
     header .user .avatar {

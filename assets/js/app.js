@@ -113,6 +113,22 @@ $(function() {
         });
     }
 
+    $('#toggle-volume-control').click( function() {
+        $("#volume-control").fadeToggle(150);
+    });
+
+    var volumeSlider = $('#volume-slider').rangeslider({ polyfill: false });
+
+    $('#volume-min').click( function() {
+        volumeSlider.val(0);
+        volumeSlider.rangeslider('update', true);
+    });
+
+    $('#volume-max').click( function() {
+        volumeSlider.val(100);
+        volumeSlider.rangeslider('update', true);
+    });
+    
     sliderInit('happiness');
     sliderInit('angry');
     sliderInit('scared');
