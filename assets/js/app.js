@@ -102,4 +102,35 @@ $(function() {
        }
     });
 
+    function sliderInit(id) {
+        $('#'+id).rangeslider({
+            polyfill: false,
+
+            // Callback function
+            onSlide: function(position, value) {
+                $('#'+id+'-value').text(value);
+            }
+        });
+    }
+
+    sliderInit('happiness');
+    sliderInit('angry');
+    sliderInit('scared');
+
+    $('#submit-results').click( function() {
+        console.log(1);
+        $('.score').fadeOut(200);
+
+        function fadeInResultsSend() {
+            $('#results-send').fadeIn(200);
+        }
+
+        function redirect() {
+            window.location.href = "../dashboard.html"
+        }
+
+        setTimeout(fadeInResultsSend, 200);
+        setTimeout(redirect, 2000);
+    });
 });
+

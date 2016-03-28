@@ -1,0 +1,61 @@
+.slider-wrapper {
+	padding: 10px 25px 10px 27px;
+}
+
+.slider-val-indicator {
+	width: 100%;
+	text-align: center;
+	table-layout: fixed;
+	font-family: $circularMedium;
+	font-size: 16px;
+	color: $blue;
+}
+
+.slider-labels {
+	font-family: $circularMedium;
+	font-size: 16px;
+	color: $blue;
+}
+
+.score {
+	margin-top: 30px;
+
+	.score-widget {
+		width: 285px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	.note {
+		width: 285px;
+		margin: 0 auto;
+	}
+
+	.current-score {
+		font-family: $circularMedium;
+		font-size: 40px;
+		color: $blue;
+		margin-bottom: 10px;
+		img {
+			vertical-align: middle;
+		}
+	}
+
+	.last-score {
+		font-family: $circularBlack;
+		font-size: 11px;
+		color: #A6AFC1;
+		text-transform: uppercase;
+	}
+
+	.buttons {
+		margin: 30px auto;
+		.btn {
+			margin-right: 30px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

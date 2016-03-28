@@ -77,6 +77,19 @@ input[type="submit"], .btn, button {
 	}
 }
 
+.btn-discourage {
+	background: #EEEEEE;
+	color: $blue;
+	box-shadow: 0 2px 6px 0 rgba(0,0,0,0.1);
+	border: 1px solid darken(#EEEEEE, 7%);
+
+	&:hover {
+		color: $blue;
+		background: darken(#EEEEEE, 2%);
+		box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+	}
+}
+
 .btn-danger {
 	background: $red;
 	border: 1px solid darken($red, 7%);

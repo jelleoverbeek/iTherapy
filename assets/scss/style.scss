@@ -159,6 +159,7 @@ hr {
 
 @import "components/buttons";
 @import "components/form";
+@import "components/rangeslider";
 @import "components/modal";
 @import "components/lists";
 @import "components/image-styles";
@@ -172,6 +173,7 @@ hr {
 @import "views/dashboard";
 @import "views/appointments";
 @import "views/chat";
+@import "views/emdr-test";
 
 .hidden {
 	display: none;

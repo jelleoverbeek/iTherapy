@@ -46,14 +46,40 @@
     </div>
 </header>
 
-<div class="container align-right margin-top-30">
+<div class="container align-center margin-top-30">
+    <div class="score">
+        <h1>Deze test is nu afgerond</h1>
+        <div class="widget score-widget">
+            <h3>Score huidige test</h3>
+            <div class="current-score">
+                43/100
+                <img src="/assets/img/improvement.png" alt="/assets/img/improvement.png 1x, /assets/img/improvement@2x.png 2x">
+            </div>
+            <span class="last-score">
+                Vorige score<br>
+                34/100
+            </span>
+        </div>
+        <div class="buttons">
+            <a href="../dashboard.html" class="btn btn-discourage inline-block">Resultaten niet versturen</a>
+            <button id="submit-results" class="btn btn-primary inline-block">Resultaten versturen naar dokter</button>
+        </div>
 
-    <video src="/assets/video/trauma.mp4" width="100%" controls></video>
-    <!-- Movie source: https://www.youtube.com/watch?v=9M4zormWsJA -->
-    
-    <a href="mood-1.html" class="btn btn-primary inline-block margin-top-20">
-        Volgende stap <img src="/assets/img/arrow-right-dark.png" srcset="/assets/img/arrow-right-dark.png 1x, /assets/img/arrow-right-dark@2x.png 2x">
-    </a>
+        <div class="margin-top-60">
+            <p class="note">Wanneer u deze optie inschakelt worden er geen meldingen meer gegeven of u gegevens wilt doorsturen naar uw therapeut</p>
+            <br>
+            <a href="#">Resultaten automatisch doorsturen inschakelen</a>
+        </div>
+    </div>
+
+
+    <div id="results-send" class="margin-top-30 hidden">
+        <h1>Resultaten verstuurd!</h1>
+        <p class="note">
+            U wordt automatisch doorgestuurd naar het dashboard.
+        </p>
+    </div>
+
 </div>
 
 </body>
