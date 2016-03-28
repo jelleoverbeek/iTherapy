@@ -103,3 +103,18 @@ input[type="submit"], .btn, button {
 		margin-right: 8px;
 	}
 }
+
+.btn-hangup {
+	width: 100px;
+	height: 100px;
+	background-color: #F1F1F1;
+	border-radius: 50%;
+	line-height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	
+	img {
+		vertical-align: middle;
+	}
+}

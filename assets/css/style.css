@@ -802,6 +802,15 @@ hr {
 .margin-top-40 {
   margin-top: 40px; }
 
+.margin-top-50 {
+  margin-top: 50px; }
+
+.margin-top-60 {
+  margin-top: 60px; }
+
+.margin-top-70 {
+  margin-top: 70px; }
+
 .no-padding {
   padding: 0; }
 
@@ -922,6 +931,18 @@ input[type="submit"], .btn, button {
   .btn-new-appointment img {
     vertical-align: middle;
     margin-right: 8px; }
+
+.btn-hangup {
+  width: 100px;
+  height: 100px;
+  background-color: #F1F1F1;
+  border-radius: 50%;
+  line-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer; }
+  .btn-hangup img {
+    vertical-align: middle; }
 
 label {
   display: block;
@@ -1100,6 +1121,9 @@ p {
 
 .color-red {
   color: #FF5E5E; }
+
+.color-light-blue {
+  color: #B2B8C7; }
 
 .message {
   padding: 10px;
