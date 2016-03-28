@@ -59,6 +59,11 @@ p {
 	}
 }
 
+p.small-column {
+	width: 450px;
+	margin: 30px auto;
+}
+
 .color-blue {
 	color: $blue;
 }

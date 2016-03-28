@@ -44,30 +44,31 @@
 			text-align: center;
 		}
 	}
+}
 
-	.action {
-		display: inline-block;
-		position: relative;
-		margin-right: 30px;
 
-		.notification {
-			position: absolute;
-			right: -7px;
-			top: -7px;
+.action {
+	display: inline-block;
+	position: relative;
+	margin-right: 30px;
 
-			width: 23px;
-			height: 23px;
-			border: 2px solid #fff;
+	.notification {
+		position: absolute;
+		right: -7px;
+		top: -7px;
 
-			background-color: $red;
-			border-radius: 50%;
-			color: #fff;
-			font-family: $circularBold;
-			line-height: 18px;
-		}
+		width: 23px;
+		height: 23px;
+		border: 2px solid #fff;
 
-		&:last-child {
-			margin-right: 0;
-		}
+		background-color: $red;
+		border-radius: 50%;
+		color: #fff;
+		font-family: $circularBold;
+		line-height: 18px;
+	}
+
+	&:last-child {
+		margin-right: 0;
 	}
 }

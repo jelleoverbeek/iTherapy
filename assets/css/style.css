@@ -1121,6 +1121,10 @@ p {
   p b {
     color: #38496E; }
 
+p.small-column {
+  width: 450px;
+  margin: 30px auto; }
+
 .color-blue {
   color: #38496E; }
 
@@ -1248,11 +1252,11 @@ header {
     top: 78px;
     text-align: center; }
 
-.dashboard .action {
+.action {
   display: inline-block;
   position: relative;
   margin-right: 30px; }
-  .dashboard .action .notification {
+  .action .notification {
     position: absolute;
     right: -7px;
     top: -7px;
@@ -1264,7 +1268,7 @@ header {
     color: #fff;
     font-family: "CircularBold", Arial, sans-serif;
     line-height: 18px; }
-  .dashboard .action:last-child {
+  .action:last-child {
     margin-right: 0; }
 
 ul.appointments {
