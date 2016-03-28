@@ -5,6 +5,8 @@ header {
 	padding: 0 40px;
 	position: relative;
 
+
+
 	.user {
 		display: table-row;
 
@@ -67,5 +69,35 @@ header {
 			margin-left: 30px;
 			cursor: pointer;
 		}
+	}
+}
+
+#user-actions {
+	position: absolute;
+	top: 55px;
+	left: 60px;
+
+	background: #FFFFFF;
+	box-shadow: 0 1px 24px 0 rgba(0,0,0,0.16);
+	border-radius: 3px;
+	width: 150px;
+	padding: 20px;
+	text-align: center;
+
+	z-index: $zindex-volumecontrol;
+
+	&::before {
+		position: absolute;
+		top: -10px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+
+		content: ' ';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 10px 10px 10px;
+		border-color: transparent transparent #ffffff transparent;
 	}
 }

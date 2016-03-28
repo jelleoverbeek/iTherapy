@@ -123,6 +123,10 @@ $(function() {
         $("#settings").fadeToggle(150);
     });
 
+    $('.user').click( function() {
+        $("#user-actions").fadeToggle(150);
+    });
+
     var volumeSlider = $('#volume-slider').rangeslider({ polyfill: false });
 
     $('#volume-min').click( function() {
