@@ -114,7 +114,13 @@ $(function() {
     }
 
     $('#toggle-volume-control').click( function() {
+        $("#settings").fadeOut(150);
         $("#volume-control").fadeToggle(150);
+    });
+
+    $('#toggle-settings').click( function() {
+        $("#volume-control").fadeOut(150);
+        $("#settings").fadeToggle(150);
     });
 
     var volumeSlider = $('#volume-slider').rangeslider({ polyfill: false });
