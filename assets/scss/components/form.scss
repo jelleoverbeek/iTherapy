@@ -30,7 +30,7 @@ input {
 	}
 
 	&:active, &:focus {
-		border: 1px solid lighten($blue, 8%);
+		border: 1px solid $purple;
 		outline: 0;
 	}
 }
