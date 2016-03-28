@@ -146,7 +146,7 @@ $(function() {
                 fillColor: "rgba(103,82,255,0.25)",
                 strokeColor: "rgba(103,82,255,1)",
                 pointColor: "rgba(103,82,255,1)",
-                data: [25, 35, 30, 45, 58, 64]
+                data: [25, 35, 30, 45, 34, 64]
             }
         ]
     };
@@ -154,8 +154,18 @@ $(function() {
     var edmrResultsOptions = {
 
         //String - Colour of the grid lines
-        scaleGridLineColor : "#F4F4F4"
+        scaleGridLineColor : "#F4F4F4",
 
+        // Boolean - If we want to override with a hard coded scale
+        scaleOverride: true,
+
+        // ** Required if scaleOverride is true **
+        // Number - The number of steps in a hard coded scale
+        scaleSteps: 10,
+        // Number - The value jump in the hard coded scale
+        scaleStepWidth: 10,
+        // Number - The scale starting value
+        scaleStartValue: 0
     };
 
     // Selecting canvas element and applying ChartJS
