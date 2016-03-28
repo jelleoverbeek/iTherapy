@@ -78,5 +78,28 @@ $(function() {
         }
 
     });
-    
+
+    var chatInputObj = $("#chat-input-obj");
+    var chatInputBtn = $("#chat-input-btn");
+    var chatObj = $("#chat-obj");
+    var chatMessageObj = $("#chat-message-obj");
+
+    chatInputObj.keyup( function () {
+        if($(this).val()) {
+            chatInputBtn.removeClass('disabled');
+        } else {
+            chatInputBtn.addClass('disabled');
+        }
+    });
+
+    chatInputBtn.click( function() {
+       if(chatInputObj.val()) {
+           chatMessageObj.text(chatInputObj.val());
+           chatInputObj.val('');
+           chatInputBtn.addClass('disabled');
+           
+           chatObj.fadeIn(150);
+       }
+    });
+
 });

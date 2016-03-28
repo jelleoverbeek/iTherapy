@@ -33,6 +33,13 @@ input[type="submit"], .btn, button {
 		vertical-align: middle;
 		margin: 0 3px;
 	}
+
+	&.disabled, &.disabled:hover, &.disabled:active, &.disabled:focus {
+		background-color: #C6C6C6;
+		border-color: darken(#C6C6C6, 7%);
+		opacity: 0.7;
+		box-shadow: none;
+	}
 }
 
 .btn-small {

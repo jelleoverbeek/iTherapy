@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 
     <!-- scripts -->
-    <!--<script src="/bower_components/jquery/dist/jquery.js"></script>-->
-    <!--<script src="/assets/js/app.js"></script>-->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/assets/js/app.js"></script>
 
 </head>
 <body>
@@ -63,7 +63,7 @@
         </ul>
     </div>
 
-    <div class="chat chat-right">
+    <div id="chat-obj" class="chat chat-right hidden">
         <div class="author">
             <h6>Els ter Horst</h6>
             <img class="avatar" src="/assets/img/avatar-els.png" srcset="/assets/img/avatar-els.png 1x, /assets/img/avatar-els@2x.png 2x">
@@ -71,7 +71,7 @@
         <ul class="chat-messages chat-message-right">
             <li>
                 <div class="meta">16:31</div>
-                <p>Goed om te horen! Ik zou wel graag het telefonisch consult laten staan op 20 december.</p>
+                <p id="chat-message-obj">Goed om te horen! Ik zou wel graag het telefonisch consult laten staan op 20 december.</p>
             </li>
         </ul>
     </div>
@@ -81,10 +81,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10">
-                <input type="text" placeholder="Typ hier je bericht">
+                <input id="chat-input-obj" type="text" placeholder="Typ hier je bericht">
             </div>
             <div class="col-md-2">
-                <button type="submit" class="btn btn-primary full-width">Verstuur</button>
+                <button id="chat-input-btn" type="submit" class="btn btn-primary full-width disabled">Verstuur</button>
             </div>
         </div>
     </div>
